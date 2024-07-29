@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Author: Damian Wrobel <dwrobel@ertelnet.rybnik.pl>
+-->
+<manifest>
+  <remote name="github"
+         fetch="https://github.com/"/>
+
+  <remote name="oe-org"
+         fetch="https://git.openembedded.org"/>
+
+  <remote name="yocto"
+         fetch="https://git.yoctoproject.org/"/>
+
+  <remote name="cmf" review="https://code.rdkcentral.com/r/"
+          fetch="https://code.rdkcentral.com/r/"/>
+
+  <default remote="github" revision="master" sync-j="32" />
+
+  <project remote="github"
+             name="yoctoproject/poky"
+         revision="1e0d58c53b7d9c3feb631e46666ae7a3e3614253"
+         upstream="kirkstone"
+             path="."/>
+
+  <project remote="oe-org"
+             name="meta-openembedded"
+	  upstream="kirkstone"
+         revision="8bb16533532b6abc2eded7d9961ab2a108fd7a5b"
+             path="meta-openembedded"/>
+
+  <project remote="yocto"
+             name="meta-virtualization"
+	  revision="kirkstone"
+             path="meta-virtualization"/>
+
+  <project remote="yocto"
+             name="meta-raspberrypi"
+         revision="kirkstone"
+             path="meta-raspberrypi"/>
+
+  <project remote="oe-org"
+             name="meta-python2"
+        revision="kirkstone"
+            path="meta-python2"/>
+
+  <project remote="github"
+             name="meta-qt5/meta-qt5"
+         revision="kirkstone"
+             path="meta-qt5"/>
+
+  <project remote="github"
+             name="kraj/meta-clang"
+         revision="c2e89dc7e1dfcc1bbe432afca2dc43d6560cb007"
+         upstream="kirkstone-clang12"
+             path="meta-clang"/>
+
+  <project remote="github"
+             name="Igalia/meta-webkit"
+         revision="84b47e79909804e9c43450de71eb9779a9634298"
+         upstream="kirkstone"
+             path="meta-webkit"/>
+
+  <project remote="github"
+             name="stagingrdkm/meta-dac-sdk"
+         revision="master"
+             path="meta-dac-sdk"/>
+
+  <project remote="cmf"
+             name="rdk/components/generic/rdk-oe/meta-rdk-video"
+         revision="rdk-next"
+             path="meta-rdk-video"/>
+
+  <project remote="cmf"
+             name="rdk/components/generic/rdk-oe/meta-cmf"
+         revision="rdk-next"
+             path="meta-cmf"/>
+
+  <project remote="cmf"
+             name="rdk/components/generic/rdk-oe/meta-rdk"
+         revision="rdk-next"
+             path="meta-rdk"/>
+
+  <project remote="cmf"
+             name="rdk/components/generic/rdk-oe/meta-rdk-ext"
+         revision="rdk-next"
+             path="meta-rdk-ext"/>
+
+  <project remote="cmf"
+             name="rdk/components/generic/rdk-oe/meta-rdk-cobalt"
+         revision="rdk-next"
+             path="meta-rdk-cobalt"/>
+
+</manifest>
+
